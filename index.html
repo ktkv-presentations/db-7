@@ -22,95 +22,16 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>
-					Beautiful presentations
-				</h1>
-				<h2>New features</h2>
-				<ul>
-					<li>Nerd icons </li>
-					<li><code class="js">(inline) => code("highlighting")</code></li>
-					<li>Automatic QR Code generation</li>
-					<li>and much more!</li>
-				</ul>
-			</section>
-			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the
-					colorscheme!</h6>
+				<h1>Концепция ER-диаграмм</h1>
+				<img data-type="qrcode" class="r-stretch" alt="https://ktkv-presentations.github.io/db-7">
 			</section>
 			<section>
 				<section>
-					<h1>Tailwind CSS</h1>
-					<div class="grid grid-cols-2 gap-8">
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div class="col-span-2">
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h1>Custom classes</h1>
-					<div class="grid grid-cols-3 gap-8">
-						<div class="border-r">
-							<h5>border-r</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-o">
-							<h5>border-o</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-y">
-							<h5>border-y</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<div>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
-					</div>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-				</section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
-					</p>
-				</section>
-			</section>
-			<section>
-				<h1>Mermaid for beautiful diagrams!</h1>
-				<div class="mermaid">
-					<pre>
+					<h1>ER-модель</h1>
+					<p>концептуальная модель данных, которая описывает структуру базы данных с помощью графического представления
+						сущностей, их атрибутов и взаимосвязей</p>
+					<div class="mermaid">
+						<pre>
 						erDiagram
     CUSTOMER ||--o{ ORDER : ""
     CUSTOMER {
@@ -134,24 +55,135 @@ var foo = {
         string deliveryAddress
     }
 						</pre>
-				</div>
-				<h4>Check documentation <a href="https://mermaid.js.org/config/usage.html">here</a>!</h4>
+					</div>
+				</section>
+				<section>
+					<h1>Цель ER-модели</h1>
+					<p>упрощения проектирования баз данных, позволяя разработчикам визуализировать данные и их отношения</p>
+				</section>
 			</section>
 			<section>
-				<h1>Now supports Nerd font icons!</h1>
-				<div>Nerdy project that adds icons to font itself</div>
-				<h6>Checkout their site for icons like this <a href="https://www.nerdfonts.com/">󰖟</a>!
-				</h6>
+				<section>
+					<h1>История создания ER-модели</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="border-b">
+							<p>
+								Разработана Питером Ченом в 1976 году как способ формализации представления данных для улучшения
+								процесса
+								проектирования баз данных
+							</p>
+							<p>
+								Широко используется в различных системах управления базами данных (СУБД)
+							</p>
+						</div>
+						<img
+							src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbit.csc.lsu.edu%2F~chen%2FChenP_2_B50_600.jpg&f=1&nofb=1&ipt=ee932bf1b5cbd5ddb73e4d611dd1698099c6d06fa4f12a9fe1c69dbb91dcad5f&ipo=images"
+							style="width: 40vw;" alt="">
+					</div>
+				</section>
 			</section>
 			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<div>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
+				<section>
+					<h1>Компоненты ER-модели</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="row-start-1 border-b">
+							<h4>Сущности</h4>
+							<p>объекты, представляющие реальные вещи или понятия, которые имеют уникальное существование в системе
+							</p>
+						</div>
+						<div class="row-start-2 border-b">
+							<h4>Связи</h4>
+							<p>Определяют, как сущности связаны между собой </p>
+						</div>
+						<div class="mermaid row-span-2">
+							<pre>
+						erDiagram
+    CUSTOMER ||--o{ ORDER : ""
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
+    ORDER ||--|{ LINE-ITEM : contains
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
+    ORDER ||--|{ STUDENT : contains
+    STUDENT {
+        int orderNumber
+        string deliveryAddress
+    }
+						</pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Компоненты ER-модели</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="row-start-1 border-b">
+							<h4>Атрибуты</h4>
+							<p>Характеристики, описывающие сущности </p>
+						</div>
+						<div class="mermaid row-span-2">
+							<pre>
+						erDiagram
+    CUSTOMER ||--o{ ORDER : ""
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
+    ORDER ||--|{ LINE-ITEM : contains
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
+    ORDER ||--|{ STUDENT : contains
+    STUDENT {
+        int orderNumber
+        string deliveryAddress
+    }
+						</pre>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
-				<h1>New changes on the way!</h1>
+				<section>
+					<h1>Преимущества ER-модели</h1>
+					<div class="grid grid-cols-1 gap-4">
+						<div class="border-b"><h4>Упрощение визуализации данных</h4><p>Графическое представление облегчает понимание структуры базы данных и ее логики</p></div>
+					</div>
+					<div class="grid grid-cols-1 gap-4">
+						<div class="border-b"><h4>Четкость и однозначность</h4><p>ER-диаграммы помогают избежать неоднозначности в описании требований к данным</p></div>
+					</div>
+					<div class="grid grid-cols-1 gap-4">
+						<div class="border-b"><h4>Поддержка совместной работы</h4><p>Упрощает коммуникацию между разработчиками и заинтересованными сторонами, позволяя легко обсуждать изменения и улучшения</p></div>
+					</div>
+				</section>
+<section>
+					<h1></h1>
+					<div class="grid grid-cols-1 gap-4">
+						<div class="border-b"><h4>Упрощение визуализации данных</h4><p>Графическое представление облегчает понимание структуры базы данных и ее логики</p></div>
+					</div>
+					<div class="grid grid-cols-1 gap-4">
+						<div class="border-b"><h4>Четкость и однозначность</h4><p>ER-диаграммы помогают избежать неоднозначности в описании требований к данным</p></div>
+					</div>
+					<div class="grid grid-cols-1 gap-4">
+						<div class="border-b"><h4>Поддержка совместной работы</h4><p>Упрощает коммуникацию между разработчиками и заинтересованными сторонами, позволяя легко обсуждать изменения и улучшения</p></div>
+					</div>
+				</section>
 			</section>
 		</div>
 	</div>
